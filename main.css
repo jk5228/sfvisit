@@ -1,15 +1,11 @@
 body {
-  margin: 0px;
-}
+  margin: 0px; }
 
 .column {
   position: relative;
   float: left;
   width: 50%;
   height: 100%;
-  outline: 1px solid black;
-}
+  outline: 1px solid black; }
 
-#column-left {
-
-}
+/*# sourceMappingURL=main.css.map */
