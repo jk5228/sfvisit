@@ -2,14 +2,50 @@ body {
   margin: 0px;
 }
 
-.column {
-  position: relative;
-  float: left;
-  width: 50%;
+#modal {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
   height: 100%;
-  outline: 1px solid black;
+  background-color: rgba(255,255,255,0.9);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+
+  #close {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    margin: 2rem;
+    right: 0px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('close.png');
+    cursor: pointer;
+  }
 }
 
-#column-left {
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
 
+.image {
+  position: relative;
+  float: left;
+  width: 25vw;
+  height: 25vw;
+  background-size: cover;
+  background-color: #eee;
+  background-position: center;
+  cursor: pointer;
+}
+
+.image:hover {
+  opacity: 0.8;
 }
