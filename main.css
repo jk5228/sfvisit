@@ -19,29 +19,45 @@ header {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: black;
   -webkit-transition: opacity 0.1s ease-in-out;
   -moz-transition: opacity 0.1s ease-in-out;
   -o-transition: opacity 0.1s ease-in-out;
-  transition: opacity 0.1s ease-in-out; }
-  #modal #close {
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    margin: 2rem;
-    right: 0px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("close.png");
-    cursor: pointer; }
+  transition: opacity 0.1s ease-in-out;
+  pointer-events: none;
+  opacity: 0; }
 
-.hide {
-  opacity: 0;
-  pointer-events: none; }
+#modal.show {
+  opacity: 1;
+  pointer-events: all; }
+  #modal.show .area {
+    opacity: 0;
+    position: relative;
+    float: left;
+    width: 33.333vw;
+    height: 100vh;
+    -webkit-transition: opacity 0.1s ease-in-out;
+    -moz-transition: opacity 0.1s ease-in-out;
+    -o-transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
+    cursor: pointer; }
+  #modal.show #area-left {
+    animation-delay: 3s;
+    background: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0)); }
+  #modal.show #area-left:hover {
+    opacity: 1; }
+  #modal.show #area-center {
+    animation-delay: 3.1s; }
+  #modal.show #area-center:hover {
+    opacity: 1; }
+  #modal.show #area-right {
+    animation-delay: 3.2s;
+    background: -webkit-linear-gradient(right, white, rgba(255, 255, 255, 0)); }
+  #modal.show #area-right:hover {
+    opacity: 1; }
 
 .image {
   position: relative;
