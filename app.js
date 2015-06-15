@@ -44,7 +44,7 @@ $(document).ready(function() {
     num = target.attr('data-num');
   });
 
-  // Stop clicks from propagating past modal
+  // Handle clicks on modal
   $('#modal').click(function(e) {
     var target = $(e.target);
     switch (target[0].id) {
@@ -61,6 +61,7 @@ $(document).ready(function() {
     e.stopPropagation();
   });
 
+  // Handle clicks on body
   $('body').keydown(function(e) {
     switch (e.keyCode) {
       case 27:
