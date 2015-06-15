@@ -46,6 +46,10 @@ header {
     cursor: pointer; }
   #modal.show #area-left {
     animation-delay: 3s;
+    background: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(left, white, rgba(255, 255, 255, 0));
+    background: -ms-linear-gradient(left, white, rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(left, white, rgba(255, 255, 255, 0));
     background: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0)); }
   #modal.show #area-left:hover {
     opacity: 1; }
@@ -55,6 +59,10 @@ header {
     opacity: 1; }
   #modal.show #area-right {
     animation-delay: 3.2s;
+    background: -webkit-linear-gradient(right, white, rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(right, white, rgba(255, 255, 255, 0));
+    background: -ms-linear-gradient(right, white, rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(right, white, rgba(255, 255, 255, 0));
     background: -webkit-linear-gradient(right, white, rgba(255, 255, 255, 0)); }
   #modal.show #area-right:hover {
     opacity: 1; }
@@ -71,5 +79,3 @@ header {
 
 .image:hover {
   opacity: 0.8; }
-
-/*# sourceMappingURL=main.css.map */

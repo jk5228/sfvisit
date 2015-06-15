@@ -55,6 +55,10 @@ header {
   #area-left {
     animation-delay: 3s;
     background: -webkit-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255, 0));
+    background: -moz-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255, 0));
+    background: -ms-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255, 0));
+    background: -o-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255, 0));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255, 0));
   }
 
   #area-left:hover {
@@ -71,6 +75,10 @@ header {
 
   #area-right {
     animation-delay: 3.2s;
+    background: -webkit-linear-gradient(right, rgba(255,255,255,1), rgba(255,255,255, 0));
+    background: -moz-linear-gradient(right, rgba(255,255,255,1), rgba(255,255,255, 0));
+    background: -ms-linear-gradient(right, rgba(255,255,255,1), rgba(255,255,255, 0));
+    background: -o-linear-gradient(right, rgba(255,255,255,1), rgba(255,255,255, 0));
     background: -webkit-linear-gradient(right, rgba(255,255,255,1), rgba(255,255,255, 0));
   }
 
